@@ -8,10 +8,11 @@ Sources of data: Fifa Soccer Ranking https://www.kaggle.com/tadhgfitzgerald/fifa
 
 Economic Freedom of the World dataset https://www.kaggle.com/gsutters/economic-freedom
 
-TRANSFORMATION
+TRANSFORM
 
-Imported both csv's converted to dataframe Transform data from date to date time in the Fifa dataframe Compile desired dataframe with the fields we want to see in both Filter Fifa dataframe to show the last month's ranking for the year Data cleaning Pull the four fields we want from the economic data source. Create a new Economic Freedom dataframe with those selected fields. Remove duplicate countries from Economic Freedom dataframe. Set the country as the index First create 2 tables in SQL for Fifa Ranking and Economic Freedom. Place the country as the primary key.
+Imported both csv's and converted to dataframes. Since 2016 is the year of interest, the "rank_date" column was transformed to datetime format in the Fifa dataframe. Compiled the desired dataframe with the fields we want to see in both. Filtered Fifa dataframe to show the "end of the year" ranking for the teams. 
+Data cleaning: We pulled the four fields we want from the economic data source. Create a new Economic Freedom dataframe with those selected fields. Removed duplicate countries from Economic Freedom dataframe. Set "country" as the index for both dataframes and created the 2 tables in SQL for Fifa Ranking and Economic Freedom; Placing the country as the primary key.
 
 LOAD
 
-Export both dataframes to SQL. In order to show correlation between Fifa ranking and economic freedom score, we selected Rank and Country from Fifa, and Freedom Score and Economic Rank. We will join on country so we can merge the datasets and compare the rank
+Expored both dataframes to SQL. In order to determine if there is a correlation between Fifa ranking and economic freedom score, we selected Rank and Country from Fifa, and Freedom Score and Economic Rank from the second dataset. We joined on country so we can merge the datasets and compare the rank. 
