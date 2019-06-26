@@ -15,4 +15,4 @@ Data cleaning: We pulled the four fields we want from the economic data source. 
 
 LOAD
 
-Expored both dataframes to SQL. In order to determine if there is a correlation between Fifa ranking and economic freedom score, we selected Rank and Country from Fifa, and Freedom Score and Economic Rank from the second dataset. We joined on country so we can merge the datasets and compare the rank. 
+Explored both dataframes to SQL. In order to determine if there is a correlation between Fifa ranking and economic freedom score, we selected Rank and Country from Fifa, and Freedom Score and Economic Rank from the second dataset. We joined on country so we can merge the datasets and compare the rank. 
